@@ -1,0 +1,39 @@
+
+:root {
+  --light: #376434;
+  --dark: #213d1f;
+  --darkest: #0f170e;
+  --background: #263325;
+  --header: #f5f50a;
+}
+
+/* Background of the entire HTML */
+body {
+  background: var(--background); 
+  margin: 0;
+}
+/* Header Style */
+h1 {
+  text-align: center;
+  color: var(--header);
+  text-shadow: 5px 3px 3px var(--darkest);
+}
+
+
+/* position of the tiles*/
+.tiles {
+  margin: 48px auto;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 16px;
+}
+
+/* Style of the tiles */
+.tile {
+  height: 100px;
+  background-color:var(--darkest);
+  border: 5px double var(--light);
+  cursor: pointer;
+  box-shadow: 10px 4px 4px var(--darkest);
+}
